@@ -17,7 +17,7 @@ jobs:
       run: echo "version=$(cat .github/.version)" >> $GITHUB_OUTPUT
 
     - name: change version numbers
-      run: sed -i "s|0.0.0|${{ steps.version.outputs.version }}|g" widget.js
+      run: sed -i "s|0.0.0|"$(cat .github/.version)"|g" widget.js
 
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
