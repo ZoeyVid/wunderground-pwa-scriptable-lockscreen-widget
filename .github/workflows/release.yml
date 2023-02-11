@@ -19,7 +19,7 @@ jobs:
     - name: change version numbers
       run: sed -i "s|0.0.0|"$(cat .github/.version)"|g" widget.js
 
-    - uses: "marvinpinto/action-automatic-releases@latest"
+    - uses: marvinpinto/action-automatic-releases@latest
       with:
         prerelease: false
         repo_token: ${{ github.token }}
