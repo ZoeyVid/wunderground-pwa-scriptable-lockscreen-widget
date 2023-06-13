@@ -8,7 +8,7 @@ let stationID = ""
 // Insert your Wunderground api key here (https://www.wunderground.com/member/api-keys)
 let apiKey = ""
 
-let loadedJSON = await new Request("https://api.weather.com/v2/pws/observations/current?stationId=" + stationID + "&format=json&units=m&apiKey=" + apiKey).loadJSON()
+let loadedJSON = await new Request("https://api.weather.com/v2/pws/observations/current?stationId=" + stationID + "&format=json&units=m&numericPrecision=decimal&apiKey=" + apiKey).loadJSON()
 
 let widget = new ListWidget()
 let widgetHeadline = widget.addText(String(loadedJSON.observations[0].neighborhood))
