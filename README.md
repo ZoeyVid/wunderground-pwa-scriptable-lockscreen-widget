@@ -4,7 +4,7 @@ A simple Scriptable lockscreen widget that view data from a Wunderground PWA on 
 <img src="https://github.com/ZoeyVid/wunderground-pwa-scriptable-lockscreen-widget/raw/main/example.jpeg">
 
 ## Config 
-Please insert your station id (You can find it here: https://www.wunderground.com/member/devices) and your Wunderground api key (You can find it here: https://www.wunderground.com/member/api-keys) on the first two variabels 
+Please insert your station id (You can find it here: https://www.wunderground.com/member/devices) and your Wunderground api key (You can find it here: https://www.wunderground.com/member/api-keys) on the first two variables 
 
 ```js
 // Insert here your station id (https://www.wunderground.com/member/devices)
